@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('https://media.giphy.com/media/3ov9k1173PdfJWRsoE/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+            font-family: 'Dancing Script', cursive;
+        }
+        .message {
+          display: none;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.4); 
+            padding: 10px; 
+            border-radius: 5px; 
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="showMessage()">1</button>
+        <button onclick="location.href='https://villaruel-angelarevillezaportfolio.my.canva.site/gallery'">4</button>
+        <button onclick="location.href='flower.html'">3</button>
+        <button onclick="location.href='https://villaruel-angelarevillezaportfolio.my.canva.site/gallery'">Surprise!</button>
+        <div class="message">Hello! Here is a message for you.</div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.querySelector('.message').style.display = 'block';
+        }
+    </script>
+
+    <iframe src="https://open.spotify.com/embed/playlist/3AQDX4BOPMjhtHDfEsVpZ5" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</body>
+</html>
