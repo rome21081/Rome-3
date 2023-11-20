@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .background img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .popup-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .bubble {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #bubble1 {
+            top: 20%;
+            left: 20%;
+        }
+
+        #bubble2 {
+            top: 20%;
+            left: 50%;
+        }
+
+        #bubble3 {
+            top: 20%;
+            left: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <img src="https://img.freepik.com/free-photo/close-up-flower-arrangement-with-pink-white-flowers_1340-41410.jpg?t=st=1700485764~exp=1700489364~hmac=40cf7ad4e8e90d6e1e040f8d0680edff1afb1bd1c06621cce2402b2ae20292e1&w=996" alt="background">
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <p>Hi di ko alam kung anong sasabihin ko here sa message section na ginawa ko!</p>
+            <p>Mejo burnout din ako eh and wala sa sarili hshaha and andaming hinahandle na pressure pero kinakaya naman dzuhh ako na to</p>
+            <p>Pero siguro mamili ka nalang ng gusto mong iopen dyan</p>
+            <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <div class="bubble" id="bubble1">3</div>
+    <div class="bubble" id="bubble2">2</div>
+    <div class="bubble" id="bubble3">5</div>
+
+    <script>
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        document.getElementById("bubble1").addEventListener("click", function() {
+            alert("charan!! happy birthday nasa legal age kana madadag dagan nanaman responsibilidad mo teh! \n  I wish na sana maka lipad kana papuntang canada and to start slowly achieve your dreams sa canada and may the Lord give you strength and help you to grow and teach you where is the right track what you needs to follow and I pray na patatagin ka nya so that \npara pag may problema eh hindi ka ganun masyadong ma hurt kasi dko naman pwedeng Iwish na mawala yung mga problems you will not grow if that’s gonna happen and yun sana lahat ng plano mo ay matupad as long as will din ni Lord yun para sayo. ");
+        });
+
+        document.getElementById("bubble2").addEventListener("click", function() {
+            alert("i just want to open up something and sana hindi maging burden sayo tong bagay na 'to and di mo na masyadong isipin \n \n kilala kita alam mong alam mo yung bagay na yun and I know na alam mo na I can tell if may tinatago ka and di ka okay \n \n the time na hindi na tayo okay I predicted it if you remeber ilang beses kong inuulit ulit na baga kalimutan mo ako or something na patungkol sa parang mawawala ka na kasi I knew that it will happen as soon as possible ramdam ko na eh. I know your chats if legit ba yun or not alam kong yung reason mo na peace is hindi talaga yun yung main reason and ginawa ko na yung bagay na yun na kulitin ka para tlga ma set free ka na kasi kilala kita eh not until dka nasasagad dka mag sasalita and alam kong hirap kana rin \n\n people are seasonal and no one will stays forever eka nga \n\n the way how you text and reply to me I know na hahahah, the way na binalik mo yung panyo I know it's over, pero you know what okay lang yun like legit kasi matagal ko nang tanggap but it doesn't matter na hindi masakit ofc masakit kasi why would kent do that? \n \n naranasan nya tas gagawin nya like kila mitch before, pero apparently as time goes by para wala nalang saakin like I pray nalang na sana U finally seek the peace that you're looking for to him.");
+        });
+
+        document.getElementById("bubble3").addEventListener("click", function() {
+            alert("some will say selfless ako sa part na yun pero hindi the truth is the situation is even you choose someone and I choose myself and we're both find happiness in diff situation \n \nyung pag lapit ko sayo and pag chat genuine yun kasi I know saakin ka lang nakakapag open up. and dko naman kaya na makita kang sad tas ako masaya yan nalang yung magagawa ko para makabawi and also alam ko yung mga reason na sinabi mo hindi talaga yun yun eh pero ayoko naman iopen na about sa di nyu pag uusap yun pero since I saw your md kahapon alam ko magiging okay kana so yahh \n \n HAPPY BIRTHDAY ULIT!!! ");
+        });
+    </script>
+</body>
+</html>
